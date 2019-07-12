@@ -275,6 +275,9 @@ $endif$
 
 % DEdd added for presento
 \begin{frame}[plain]
+\tikz[overlay,remember picture] \node[opacity=0.8, at=(current page.center)]{%
+  \includegraphics[width=\paperwidth]{background}};
+
   \vfill
     \myTitle
     \vfill
@@ -282,8 +285,8 @@ $endif$
     \vfill
     \myDetails
     \begin{flushright}
-    \raisebox{-5mm}[0mm]{
-      \includegraphics[width=0.15\textwidth]{../logos/cont-limno.png} %
+    \raisebox{-8mm}[0mm]{
+      \includegraphics[width=0.17\textwidth]{../logos/cont-limno.png} %
       \includegraphics[width=0.15\textwidth]{../logos/cnh-lakes.png} %
       \includegraphics[width=0.15\textwidth]{../logos/logo_msu-fw.png} %
       }
