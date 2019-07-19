@@ -246,7 +246,7 @@ $if(title)$
 }
 $endif$
 $if(author)$
-\newcommand{\myName}{\largetext{\color{orange}{$for(author)$$author$$sep$ \and $endfor$}}
+\newcommand{\myName}{\largetext{$for(author)$$author$$sep$ \and $endfor$}
   $if(address)$ \\\setnote{$address$} $endif$
 }
 $endif$
@@ -275,7 +275,7 @@ $endif$
 
 % DEdd added for presento
 \begin{frame}[plain]
-\tikz[overlay,remember picture] \node[opacity=0.8, at=(current page.center)]{%
+\tikz[overlay,remember picture] \node[opacity=0.5, at=(current page.center)]{%
   \includegraphics[width=\paperwidth]{background}};
 
   \vfill
@@ -288,7 +288,7 @@ $endif$
     \raisebox{-8mm}[0mm]{
       \includegraphics[width=0.17\textwidth]{../logos/cont-limno.png} %
       \includegraphics[width=0.15\textwidth]{../logos/cnh-lakes.png} %
-      \includegraphics[width=0.15\textwidth]{../logos/logo_msu-fw.png} %
+      \includegraphics[width=0.15\textwidth]{../logos/logo_msu-fw_white.png} %
       }
     \end{flushright}
  \vfill
