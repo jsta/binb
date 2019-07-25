@@ -264,7 +264,8 @@ $endif$
 \setlength{\TPVertModule}{1cm}
 
 \newcommand\crule[1][black]{\textcolor{#1}{\rule{2cm}{2cm}}}
-
+\newcommand{\shiftright}[2]{\makebox[#1][r]{\makebox[0pt][l]{#2}}}
+\newcommand{\shiftleft}[2]{\makebox[0pt][r]{\makebox[#1][l]{#2}}}
 %% presento end
 
 \begin{document}
@@ -285,10 +286,12 @@ $endif$
     \vfill
     \myDetails
     \begin{flushright}
-    \raisebox{-8mm}[0mm]{
+    \shiftleft{125pt}{
+    \raisebox{-9mm}[3mm]{
+      \includegraphics[width=0.11\textwidth]{../logos/cnh-lakes.png} %
+      \includegraphics[width=0.11\textwidth]{../logos/logo_msu-fw_white.png} %
       \includegraphics[width=0.17\textwidth]{../logos/cont-limno.png} %
-      \includegraphics[width=0.15\textwidth]{../logos/cnh-lakes.png} %
-      \includegraphics[width=0.15\textwidth]{../logos/logo_msu-fw_white.png} %
+      }
       }
     \end{flushright}
  \vfill
