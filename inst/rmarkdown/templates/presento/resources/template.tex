@@ -110,7 +110,7 @@ $endfor$
 $endif$
 $if(natbib)$
 \usepackage{natbib}
-\bibliographystyle{$if(biblio-style)$$biblio-style$$else$plainnat$endif$}
+\bibliographystyle{$if(biblio-style)$$biblio-style$$else$apacite$endif$}
 $endif$
 $if(biblatex)$
 \usepackage[$if(biblio-style)$style=$biblio-style$,$endif$$for(biblatexoptions)$$biblatexoptions$$sep$,$endfor$]{biblatex}
@@ -227,7 +227,8 @@ $endif$
 \date{$date$}
 
 %% presento start
-\addtolength{\headsep}{0.4cm}
+% increase top margin
+% \addtolength{\headsep}{0.3cm}
 
 % presento-config
 % Sets the background color to be light gray and the default text color to be heavy dark gray.
@@ -278,21 +279,23 @@ $endif$
 
 % DEdd added for presento
 \begin{frame}[plain]
-\tikz[overlay,remember picture] \node[opacity=0.5, at=(current page.center)]{%
-  \includegraphics[width=\paperwidth]{background}};
+% \tikz[overlay,remember picture] \node[opacity=0.5, at=(current page.center)]{%
+%   \includegraphics[width=\paperwidth]{background}};
 
   \vfill
+  \vspace{2em}
     \myTitle
     \vfill
+    \vspace{6em}
     \myName
     \vfill
     \myDetails
     \begin{flushright}
     \shiftleft{125pt}{
-    \raisebox{-9mm}[3mm]{
-      \includegraphics[width=0.11\textwidth]{../logos/cnh-lakes.png} %
-      \includegraphics[width=0.11\textwidth]{../logos/logo_msu-fw_white.png} %
-      \includegraphics[width=0.17\textwidth]{../logos/cont-limno_shifted.png} %
+    \raisebox{6mm}[3mm]{
+      \includegraphics[width=0.11\textwidth]{/home/jose/Documents/Science/Presentations/logos/cnh-lakes.png} %
+      \includegraphics[width=0.11\textwidth]{/home/jose/Documents/Science/Presentations/logos/logo_msu-fw_white.png} %
+      \includegraphics[width=0.17\textwidth]{/home/jose/Documents/Science/Presentations/logos/cont-limno_shifted.png} %
       }
       }
     \end{flushright}
